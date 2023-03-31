@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Moja strona</title>
+<h2>Time: <span id="time"> </span></h2>
+<script src="1.js"></script>
+<script >
+   
+function refreshTime() {
+  const timeDisplay = document.getElementById("time");
+  const dateString = new Date().toLocaleString();
+  const formattedString = dateString.replace(", ", " - ");
+  timeDisplay.textContent = formattedString;
+}
+  setInterval(refreshTime, 1000);
+</script>
+</head>
+
+<body>
+<h1 id="tekst">Witaj!</h1>
+<button onclick="Alertt()">Kliknij mnie</button>
+</body>
+</html>
