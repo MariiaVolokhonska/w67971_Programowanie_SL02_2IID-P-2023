@@ -57,7 +57,21 @@ section{
     font-size:20px;
 }
 article{
-    display:flex;
-    margin:0px 120px;
+    position:relative;
+    display:block;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    padding: 150px 120px;
+}
+footer{
+    align-items:center;
+    position:fixed;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:aquamarine;
     font-size:20px;
+    margin:10px 10px;
+}
+.article-element{
+    width:50%;
 }
