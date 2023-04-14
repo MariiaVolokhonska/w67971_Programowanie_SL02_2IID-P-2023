@@ -15,9 +15,8 @@ b=prompt("enter b");
 console.log(Number(a)+Number(b));
 
 function Game(){
-    var g,j = True;
+    var g,j = true;
     var t=0;
-    document.write("Prowerka")
     while(g){
         var w=Math.floor(Math.random()*100);
         var u=document.getElementById("pole");

@@ -3,6 +3,7 @@ body {
 padding:0px;
 font:"Inter", sans-serif;
 box-sizing:border-box;
+background-color:bisque;
 }
 h1 {font-size: 50px;}
 h4{font-size:30px;}
