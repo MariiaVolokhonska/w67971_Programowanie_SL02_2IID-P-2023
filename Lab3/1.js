@@ -7,31 +7,34 @@ for(i=0;i<=100;i++){
     }
 }
 var a,b;
-var g,j;
+
 
 
 a=prompt("Enter a");
 b=prompt("enter b");
 console.log(Number(a)+Number(b));
 
-
-w=Math.floor(Math.random()*100);
-g=True
-j=True
-while(g){
-    u=prompt("Enter your number")
-    while (j){
-        if (w==u){
-            console.log("Congratulations!")
-            j=False
-        }
-        else if(w>u){
-            console.log("Your guess number is too small. Try again")
-        }
-        else if(u>w){
-            console.log("Your guess number is too big.Try again")
+function Game(){
+    var g,j = True;
+    var t=0;
+    document.write("Prowerka")
+    while(g){
+        var w=Math.floor(Math.random()*100);
+        var u=document.getElementById("pole");
+        while (j){
+            if (w==u){
+                document.write("Congratulations!");
+                document.write("Amount of your guesses:",t);
+                j=False
+            }
+            else if(w>u){
+                document.write("Your guess number is too small. Try again");
+                t+=1;
+            }
+            else if(u>w){
+                document.write("Your guess number is too big.Try again");
+                t+=1;
+            }
         }
     }
-    
-
-    }
+}
