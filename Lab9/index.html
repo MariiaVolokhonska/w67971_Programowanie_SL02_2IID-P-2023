@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet " href="1.css">
+<title>Strona</title>
+</head>
+<body>
+<p>Zadanie 1. Przyciski</p>
+<button>Button1</button>
+<button>Button2</button>
+<button>Button3</button>
+
+<p>Zadanie 2.Validacja</p>
+<form id="form" onsubmit="bigFunc()" novalidate>
+    <label for="imie">Imię: </label>
+    <input type="text" id="imie" name="imie" oninput="return validateName()"><br/>
+    <label for="surname">Nazwisko: </label>
+    <input type="text" id="surname" name="surname" oninput="validateSurname()"><br/>
+    <label for="email">Email: </label>
+    <input type="email" id="email" name="email"><br/>
+    <label for="pas">Hasło: </label>
+    <input type="password" id="pas" name="pas"><br/>
+    <label for="pas2">Powtórz hasło: </label>
+    <input type="password" id="pas2" name="pas2" oninput="drugieHaslo()"><br/>
+    <input type="submit" name="Submit" value="Submit">
+
+</form>
+<p>Zadanie 3. Obiekt(w konsoli)</p><br/>
+<p>Zadanie 4. Tablicy</p>
+<form>
+    <input type="text" name="pole1" id="t1">
+    <input type="text" name="pole2" id="t2">
+</form>
+<button id="b1">Push me!</button>
+<p>Tablica: </p>
+<table id="table1">
+    <tr>
+        <td>Imię</td>
+        <td>Nazwisko</td>
+    </tr>
+</table>
+<script src="9.js"></script>
+
+
+</body>
+</html>
