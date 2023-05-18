@@ -50,9 +50,24 @@ function validatePass(){
     } 
 };
 function bigFunc(){
-    if((validateEmail()||validatePass())){
+    if((validateEmail()||validatePass()||validateDate())){
         return true;
     }
+}
+let curDate=new Date();
+const curYear=curDate.getFullYear();
+const curYearInt= parseInt(curYear);
+
+function validateDate(){
+    const data=document.forms["forms"]["bday"];
+    let data_v=data.value;
+    const dateList=split(" ");
+    console.log(dateList);
+    let dataRegex=/^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/;
+    if(!dataRegex.test(data_v)){
+        alert("Nie poprawno wprowadzono dane dotyczące daty urodzenia");
+    }
+
 }
 
 
