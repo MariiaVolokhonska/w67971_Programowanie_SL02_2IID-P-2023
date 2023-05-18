@@ -6,25 +6,25 @@
 </head>
 <body>
     /*Task1*/
-    <form id="form"  novalidate>
+    <form id="form"  onsubmit="bigFunc()"  novalidate>
         <label for="name">Imię:</label>
         <input type="text" name="name" id="name" oninput="return validateForm()" required><br/>
-        <label for="nazwisko">Nazwisko:</label>
+        <label for="surn">Nazwisko:</label>
         <input type="text" name="nazwisko" id="surn" oninput="return validateForm2()" required><br/>
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email" oninput="return validateEmail()" required><br/>
-        <label for="password">Hasło:</label>
-        <input type="password" name="password" id="pas" pattern=".{8,}"><br/>
+        <input type="email" name="email" id="email" required><br/>
+        <label for="pas">Hasło:</label>
+        <input type="password" name="pas" id="pas" pattern=".{8,}"><br/>
         <label for="sex">Płeć:</label>
         <label><input type="radio" name="sex" id="sex">Kobięta</label>
         <label><input type="radio" name="sex" id="sex">Mężczyzna</label><br/>
-        <label for="telephone">Telefon:</label>
+        <label for="tel">Telefon:</label>
         <input type="tel" name="telephone" pattern="[0-9]{9}" id="tel" required><br/>
         <label for="bday">Data urodzenia:</label>
         <input type="date" name="bday" id="bday" required><br/>
         <label for="country">Kraj:</label>
         <input type="text" name="country" id="country" pattern="[A-Za-z]{1,}" required><br/>
-        <input type="submit" value="Submit"  onsubmit="return validateForm()" required><br/>
+        <input type="submit" value="Submit" required><br/>
         </form>
 <script src="7_8.js"></script>
 </body>

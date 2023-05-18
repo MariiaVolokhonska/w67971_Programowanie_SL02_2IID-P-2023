@@ -41,3 +41,18 @@ function validateEmail(){
         alert("Proszę podać poprawny adres e-mail.");
  }
 };
+function validatePass(){
+    const pass=document.forms["form"]["pas"];
+    var pass_val=pass.value;
+    const passRegex=/^[a-zA-Z0-9!@#$%^&*]{8,32}$/;
+    if(!passRegex.test(pass_val)){
+        alert("Proszę podać silniejsze hasło");
+    } 
+};
+function bigFunc(){
+    if((validateEmail()||validatePass())){
+        return true;
+    }
+}
+
+
